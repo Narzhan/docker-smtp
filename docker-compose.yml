@@ -2,10 +2,10 @@ version: '2'
 
 services:
   mail:
-    image: tvial/docker-mailserver:2.1
+    image: narzhan/docker-smtp:latest
     hostname: mail
-    domainname: domain.com
-    container_name: mail
+    domainname: bubblemint.eu
+    container_name: honeypot-smtp
     ports:
     - "25:25"
     - "143:143"
